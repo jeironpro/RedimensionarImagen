@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redimensionar Imagenes</title>
+    <link rel="icon" href="img/redimensionarImagen.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            <h1>Redimensionar Imagen</h1>
+            <div class="contenedor-inbut">
+                <div class="input" id="input">
+                    <img src="img/imagen.png" alt="SUBIR" class="icono">
+                    <span class="span-seleccionar">Selecciona una imagen</span>
+                    <img src="#" alt="Previsualizacion" id="previsualizacion" class="previsualizacion">
+                </div>
+            </div>
+            <div class="input-ancho-largo">
+                <div class="contenedor-ancho">
+                    <span>ANCHO</span>
+                    <input type="number" id="ancho" class="ancho">
+                </div>
+                <div class="contenedor-largo">
+                    <span>LARGO</span>
+                    <input type="number" id="largo" class="largo">
+                </div>
+            </div>
+            <div class="boton">
+                <button>Descargar Imagen</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

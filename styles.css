@@ -1,0 +1,165 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.contenedor {
+    background-color: #fff;
+    box-shadow: 0 0 20px;
+    height: 580px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 500px;
+}
+
+.contenedor h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.contenedor .contenedor-inbut {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.contenedor-inbut .input {
+    align-items: center;
+    border: 2px dashed #000;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    margin-top: 5px;
+    position: relative;
+    width: 400px;
+}
+
+.contenedor-inbut .icono {
+    filter: drop-shadow(5px 5px 2px #333);
+    height: 90px;
+    width: 90px;
+}
+
+.contenedor-inbut .span-seleccionar {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.previsualizacion {
+    display: none;
+    height: 300px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 400px;
+    z-index: 100;
+}
+
+.input-ancho-largo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.contenedor-ancho, .contenedor-largo {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-ancho {
+    margin-left: 50px;
+}
+
+.contenedor-largo {
+    margin-right: 50px;
+}
+
+.input-ancho-largo .ancho {
+    height: 40px;
+    width: 80px;
+}
+
+.input-ancho-largo .largo {
+    height: 40px;
+    width: 80px;
+}
+
+.boton {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.boton button {
+    background-color: #00ff00;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    margin: 0 50px;
+    width: 100%;
+}
+
+.boton button:hover {
+    background-color: #008b00;
+    color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+    .contenedor {
+        width: 400px;
+        height: 900px;
+    }
+
+    .contenedor h1 {
+        font-size: 27px;
+    }
+
+    .contenedor-inbut {
+        margin-top: 30px;
+    }
+
+    .contenedor-inbut .icono {
+        height: 50px;
+        width: 50px;
+    }
+
+    .contenedor-inbut .span-seleccionar {
+        font-size: 18px;
+    }
+
+    .previsualizacion {
+        height: 300px;
+        width: 375px;
+    }
+
+    .input-ancho-largo {
+        margin-top: 60px;
+    }
+
+    .contenedor-ancho {
+        margin-left: 10px;
+    }
+    
+    .contenedor-largo {
+        margin-right: 10px;
+    }
+
+    .boton {
+        margin-top: 60px;
+    }
+
+    .boton button {
+        margin: 0 10px;
+    }
+}
